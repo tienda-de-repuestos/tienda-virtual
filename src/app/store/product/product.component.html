@@ -1,0 +1,18 @@
+<div class="container"> 
+  <div class="row">
+    <div *ngFor="let product of products$ | async" class="col s14 m3">
+      <div class="card">
+        <div class="card-image">
+          <img [src]="product.image">
+          
+        </div>
+        <span class="card-title">{{product.name}}</span>
+        <div class="card-content">
+            <p>precio: {{product.price}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#">COMPRAR</a>
+        </div>
+      </div>
+    </div>
+  </div>

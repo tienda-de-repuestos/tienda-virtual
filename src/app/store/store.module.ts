@@ -4,9 +4,10 @@ import { CommonModule } from '@angular/common';
 import { StoreRoutingModule } from './store-routing.module';
 import { CatalogComponent } from './catalog/catalog.component';
 import { ProductsService } from './products.service';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
-  declarations: [CatalogComponent],
+  declarations: [CatalogComponent, ProductComponent],
   imports: [
     CommonModule,
     StoreRoutingModule

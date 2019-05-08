@@ -1,19 +1,16 @@
 <div class="container"> 
   <div class="row">
-    <div *ngFor="let product of products$ | async" class="col s12 m3">
+    <div *ngFor="let categorie of categories$ | async" class="col s21 m3">
       <div class="card">
         <div class="card-image">
-          <img [src]="product.image">
+          <img [src]="categorie.image">
           
         </div>
-        <span class="card-title">{{product.name}}</span>
+        <span class="card-title">{{categorie.name}}</span>
         <div class="card-content">
-          <p>precio: {{product.price}}</p>
-          <p>{{product.description}}</p>
-          <p>Fabricante: {{product.maker}}</p>
         </div>
         <div class="card-action">
-          <a href="#">Comprar</a>
+          <a [routerLink]="categorie.ruta">Seleccionar</a>
         </div>
       </div>
     </div>

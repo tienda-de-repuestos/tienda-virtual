@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from '../../shared/models/product';
 import { ProductsService } from '../products.service';
+import { Categorie } from '../../shared/models/categorie';
 
 @Component({
   selector: 'iso-catalog',
@@ -10,12 +11,12 @@ import { ProductsService } from '../products.service';
 })
 export class CatalogComponent implements OnInit//,OnDestroy {
 {
-  products$: Observable<Product[]>;
-  // products: Product[];
+  categories$: Observable<Categorie[]>;
+  
   constructor(private productsService: ProductsService) { }
-
   ngOnInit() {
-    this.products$ = this.productsService.getProducts();
+    this.categories$ = this.productsService.getCategories();
+    
     // this.products$.subscribe(products =>{
     //   this.products=products;
     //   console.log(this.products);
