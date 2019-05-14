@@ -1,25 +1,74 @@
-<header>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <div class="container">
-          <a routerLink="/">ISO</a>
-          <a data-target="mobile-menu" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
+<!-- Header section -->
+<header class="header-section">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 text-center text-lg-left">
+          <!-- logo -->
+          <a href="./index.html" class="site-logo">
+            <img src="assets/img/logo.png" alt="">
           </a>
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a routerLink="/">Tienda</a>
-            </li>
-          </ul>
+        </div>
+        <div class="col-xl-6 col-lg-5">
+          <form class="header-search-form">
+            <input type="text" placeholder="Search on divisima ....">
+            <button><i class="flaticon-search"></i></button>
+          </form>
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="user-panel">
+            <div class="up-item">
+              <i class="flaticon-profile"></i>
+              <a href="#">Sign</a> In or <a href="#">Create Account</a>
+            </div>
+            <div class="up-item">
+              <div class="shopping-card">
+                <i class="flaticon-bag"></i>
+                <span>0</span>
+              </div>
+              <a href="#">AñadirProductos</a>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
   </div>
-
-  <ul isoSidenav class="sidenav" id="mobile-menu">
-    <li>
-      <a routerLink="/" class="sidenav-close">Tienda</a>
-    </li>
-  </ul>
+  <nav class="main-navbar">
+    <div class="container">
+      <!-- menu -->
+      <ul class="main-menu">
+        <li><a href="#">Home</a></li>
+        <li><a routerLink="">Tienda</a></li>
+        <li><a href="#">Accesorios</a>
+          <ul class="sub-menu">
+            <li><a href="#">Electronica</a></li>
+            <li><a href="#">Alfombras de Piso</a></li>
+            <li><a href="#">Almacenamiento</a></li>
+            <li><a href="#">Inicio Remoto</a></li>
+            <li><a href="#">Luces</a></li>
+            <li><a href="#">Cubiertas</a></li>
+            <li><a href="#">Stops</a></li>
+            <li><a href="#">Aros</a></li>
+            <li><a href="#">Limpieza</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Catalogo</a>
+          <ul class="sub-menu">
+            <li><a href="./product.html">Toyota</a></li>
+            <li><a href="./category.html">Mazda</a></li>
+            <li><a href="./cart.html">Volkswagen</a></li>
+            <li><a href="./checkout.html">BMW</a></li>
+            <li><a href="./contact.html">Mercedes</a></li>
+            <li><a href="./contact.html">Nissan</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Ofertas
+          <span class="new">New</span>
+        </a></li>
+      <li><a href="#">Contactenos</a></li>
+        <li><a href="#">Nosotros</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
+<!-- Header section end -->
