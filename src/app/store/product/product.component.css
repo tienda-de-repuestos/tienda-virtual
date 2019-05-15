@@ -1,0 +1,16 @@
+
+.image-product{
+    width: 15%;
+    height: 15%;
+}
+.name-product{
+    font-size: 17px;    
+    text-shadow: 1px 1px;
+    font-family: cursive;
+}
+.button-comprar{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-shadow: 1px 1px black;
+}

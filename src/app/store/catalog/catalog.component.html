@@ -1,0 +1,27 @@
+<div class="container"> 
+  <div class="row">
+    <div *ngFor="let categorie of categories$ | async" class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img [src]="categorie.image">
+          
+        </div>
+        <span class="card-title">{{categorie.name}}</span>
+        <div class="card-content">
+        </div>
+        <div class="card-action">
+          <a [routerLink]="categorie.ruta">Seleccionar</a>
+        </div>
+
+      </div>
+      <span class="card-title">{{categorie.name}}</span>
+      <div class="card-content">
+      </div>
+      <div class="card-action">
+        <a [routerLink]="categorie.ruta">Seleccionar</a>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
