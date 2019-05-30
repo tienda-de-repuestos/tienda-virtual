@@ -1,0 +1,20 @@
+<div class="container"> 
+  <div class="row">
+    <div *ngFor="let product of products$ | async" class="col s12 m3" >
+      <div class="card">
+        <div class="card-image">
+          <img [src]="product.image" class="image-product">
+          <div *ngIf="product.quantity<=0" style="position:absolute; top:0; left:0;">
+                <img src="https://pngimage.net/wp-content/uploads/2018/05/agotado-png-2.png" alt="agotado">
+          </div>
+        </div>
+        <span class="name-product">{{product.name}}</span>
+        <div class="card-content">
+            <p> <strong> precio:</strong> {{product.price}} bs.-</p>
+        </div>
+        <div class="card-action">
+          <a href="# " class="button-comprar">COMPRAR</a>
+        </div>
+      </div>
+    </div>
+  </div>
