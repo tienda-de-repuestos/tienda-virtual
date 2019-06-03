@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
 import { environment } from '../environments/environment';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,7 +16,9 @@ import { environment } from '../environments/environment';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, 
     AppRoutingModule, 
-    LayoutModule],
+    LayoutModule,
+    FormsModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
