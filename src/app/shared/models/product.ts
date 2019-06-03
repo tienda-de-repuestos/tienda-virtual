@@ -8,4 +8,6 @@ export interface Product {
     price: number;
     quantity: number;
     manu_date?: Timestamp<Date>;
+    model? : string;
+    description?: string;
 }
