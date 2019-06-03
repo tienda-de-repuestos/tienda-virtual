@@ -1,0 +1,24 @@
+.button-cancel {
+    float: right;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    background: grey;
+}
+.button-reg {
+    background: green;
+}
+.error {
+    color:#F44336;
+    font-size: 12px;
+}
