@@ -14,6 +14,62 @@
         </div>
         <div class="card-action">
           <a href="# " class="button-comprar">COMPRAR</a>
+          
+          <!-- Button trigger modal -->
+          <a type="button" class="btn btn-primary" data-toggle="modal" href="#{{product.code}}">
+          Detalle
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="{{product.code}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">{{product.name}}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                 </div>
+                 <div class="modal-body">
+                   <div class="row">
+                      <div class="col-md-6">
+                     <div class="text-center" width=250px>
+                        <img [src]="product.image" class="image-product"  class="img-fluid" alt="Responsive image">
+                      </div>
+                   </div>
+                   <div class="col-sm">
+                     <h5 class="modal-title" id="exampleModalLabel">Fabricante: {{product.maker}}</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Modelo: {{product.model}}</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Descripcion: {{product.description}}</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Precio: {{product.price}}</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Cantidad Disponible: {{product.quantity}}</h5>
+                   </div>
+                   </div>
+
+                   <div class= "row" >
+                     <div class= "col" >
+                        <i class="material-icons" style= "color :#0097a7">star</i>
+                        <i class="material-icons" style= "color :#0097a7">star</i>
+                        <i class="material-icons" style= "color :#0097a7">star</i>
+                        <i class="material-icons" style= "color :#0097a7">star</i>                     
+                   </div>
+                  
+                   
+                 </div>
+                 <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Comentario</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
+                      <button type="button" class="btn btn-danger">Comentar</button>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
+                      </div>
+                 <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                 <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+             </div>
+             </div>
+           </div>
         </div>
       </div>
     </div>
